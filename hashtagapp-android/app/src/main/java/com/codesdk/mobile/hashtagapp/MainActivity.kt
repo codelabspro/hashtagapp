@@ -2,6 +2,7 @@ package com.codesdk.mobile.hashtagapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 
 class MainActivity : ComponentActivity() {
@@ -13,8 +14,9 @@ class MainActivity : ComponentActivity() {
         var isAvailable: Boolean = true
         var s1 = "Call me"
         var s2 = " Maybe"
-        val combined = s1 + s2
-        println(combined)
+        val names = mutableListOf<String>("Ali", "Maya", "Chen")
+
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
