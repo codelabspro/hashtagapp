@@ -7,9 +7,9 @@ import androidx.room.PrimaryKey
  * Created by Das on 2022-01-21.
  */
 @Entity
-class Todo {
-    @PrimaryKey val id: Int? = null
+data class Todo (
     val title: String,
     val description: String?,
     val isDone: Boolean,
-}
+    @PrimaryKey val id: Int? = null
+)
