@@ -4,6 +4,8 @@ import android.app.Application
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.codesdk.mobile.hashtagapp.data.TodoDatabase
+import com.codesdk.mobile.hashtagapp.data.TodoRepository
+import com.codesdk.mobile.hashtagapp.data.TodoRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,6 +26,12 @@ object AppModule {
             TodoDatabase::class.java,
             "todo_db"
         ).build()
+    }
+
+    @Provides
+    @Singleton
+    fun provideToDoRepository(db: TodoDatabase): TodoRepository {
+        return TodoRepositoryImpl(db.dao)
     }
 
 }
