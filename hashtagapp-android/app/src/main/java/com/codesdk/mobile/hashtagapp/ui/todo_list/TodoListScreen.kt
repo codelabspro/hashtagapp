@@ -1,4 +1,4 @@
-package com.codesdk.mobile.hashtagapp.ui.todolist
+package com.codesdk.mobile.hashtagapp.ui.todo_list
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn

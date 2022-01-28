@@ -1,4 +1,4 @@
-package com.codesdk.mobile.hashtagapp.ui.todolist
+package com.codesdk.mobile.hashtagapp.ui.todo_list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
